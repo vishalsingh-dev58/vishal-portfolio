@@ -48,29 +48,29 @@ export default function Portfolio() {
   const [preview, setPreview] = useState(null);
 
   const certifications = [
-    { name: "AWS Cloud Practitioner Essentials — AWS Skill Builder (2025)", image: `${import.meta.env.BASE_URL}certs/aws-cloud-practitioner.png`, link: null },
-    { name: "MySQL Bootcamp — Udemy (2023)", image: `${import.meta.env.BASE_URL}certs/mysql-bootcamp.png`, link: "https://www.udemy.com/certificate/UC-6fa360d0-20de-45e2-85ad-c763e76c4511/" },
+    { name: "AWS Cloud Practitioner Essentials — AWS Skill Builder (2025)", image: "/certs/aws-cloud-practitioner.png", link: null },
+    { name: "MySQL Bootcamp — Udemy (2023)", image: "/certs/mysql-bootcamp.png", link: "https://www.udemy.com/certificate/UC-6fa360d0-20de-45e2-85ad-c763e76c4511/" },
     //{ name: "Cloud & DevOps Specialization — Coursera (2023)", image: "/certs/cloud-devops.png", link: null },
-    { name: "Security Fundamentals — Microsoft (2019)", image: `${import.meta.env.BASE_URL}certs/microsoft-security.png`, link: null },
+    { name: "Security Fundamentals — Microsoft (2019)", image: "/certs/microsoft-security.png", link: null },
   ];
 
   const badges = [
-    { name: "AWS Knowledge: Cloud Essentials", image: `${import.meta.env.BASE_URL}badges/aws-cloud-essentials.png`, link: "https://www.credly.com/badges/bb1ea324-6840-470d-b8ae-919aa8af69f9/linked_in_profile" },
-    { name: "AWS Educate Introduction to Cloud 101", image: `${import.meta.env.BASE_URL}badges/aws-cloud-101.png`, link: "https://www.credly.com/badges/02e6be05-78bf-4887-9a5c-68440ef6c3ba/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Storage", image: `${import.meta.env.BASE_URL}badges/aws-storage.png`, link: "https://www.credly.com/badges/9873e5b1-08bb-4c0b-9915-78ae74010d55/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Compute", image: `${import.meta.env.BASE_URL}badges/aws-compute.png`, link: "https://www.credly.com/badges/d49b7670-bbfa-4ffe-af49-3a0a8945b9f2/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Databases", image: `${import.meta.env.BASE_URL}badges/aws-database.png`, link: "https://www.credly.com/badges/b2b20730-4894-4e1a-81d0-9f6cc85a7985/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Networking", image: `${import.meta.env.BASE_URL}badges/aws-networking.png`, link: "https://www.credly.com/badges/cfaa05db-99dd-47a7-8e68-970e7b65d344/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Cloud Ops", image: `${import.meta.env.BASE_URL}badges/aws-cloudops.png`, link: "https://www.credly.com/badges/01e6f32d-6892-44f8-abb5-61d2d9f40a27/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Security", image: `${import.meta.env.BASE_URL}badges/aws-security.png`, link: "https://www.credly.com/badges/932338e5-e58e-45b9-8e47-62531a20e568/linked_in_profile" },
-    { name: "AWS Educate Getting Started with Serverless", image: `${import.meta.env.BASE_URL}badges/aws-serverless.png`, link: "https://www.credly.com/badges/410247a9-7013-4e8c-b092-41567d66ce45/linked_in_profile" },
-    { name: "Introduction to Cloud Computing", image: `${import.meta.env.BASE_URL}badges/intro-cloud.png`, link: "https://www.credly.com/badges/27e22ff2-79f1-4fa5-a590-6b009c7e9ee5/linked_in_profile" },
-    { name: "DevOps Essentials", image: `${import.meta.env.BASE_URL}badges/devops.png`, link: "https://www.credly.com/badges/3fe9b45a-5293-41fb-b9aa-b72c253c5dc7/linked_in_profile" },
-    { name: "Linux Commands & Shell Scripting Essentials", image: `${import.meta.env.BASE_URL}badges/linux.png`, link: "https://www.credly.com/badges/5d5d96aa-dd07-44a9-b195-531dad7dba78/linked_in_profile" },
-    { name: "Software Engineering Essentials", image: `${import.meta.env.BASE_URL}badges/software-engineering.png`, link: "https://www.credly.com/badges/11c65ee6-2222-4bbb-b30c-757e19fe7598/linked_in_profile" },
-    { name: "Git and GitHub Essentials", image: `${import.meta.env.BASE_URL}badges/git-github.png`, link: "https://www.credly.com/badges/b834a215-e1e4-45fb-ba93-f0fd2bcc0a64/linked_in_profile" },
-    { name: "ISC2 Candidate", image: `${import.meta.env.BASE_URL}badges/isc2.png`, link: "https://www.credly.com/badges/a1bc5bd8-bb87-44d0-a1ee-0bb2e1c7b9ba/linked_in_profile" },
-    { name: "MTA: Security Fundamentals", image: `${import.meta.env.BASE_URL}badges/mta-security.png`, link: "https://www.credly.com/badges/2f499d68-d5a2-476e-a91d-db6f7beda3f7/public_url" },
+    { name: "AWS Knowledge: Cloud Essentials", image: "/badges/aws-cloud-essentials.png", link: "https://www.credly.com/badges/bb1ea324-6840-470d-b8ae-919aa8af69f9/linked_in_profile" },
+    { name: "AWS Educate Introduction to Cloud 101", image: "/badges/aws-cloud-101.png", link: "https://www.credly.com/badges/02e6be05-78bf-4887-9a5c-68440ef6c3ba/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Storage", image: "/badges/aws-storage.png", link: "https://www.credly.com/badges/9873e5b1-08bb-4c0b-9915-78ae74010d55/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Compute", image: "/badges/aws-compute.png", link: "https://www.credly.com/badges/d49b7670-bbfa-4ffe-af49-3a0a8945b9f2/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Databases", image: "/badges/aws-database.png", link: "https://www.credly.com/badges/b2b20730-4894-4e1a-81d0-9f6cc85a7985/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Networking", image: "/badges/aws-networking.png", link: "https://www.credly.com/badges/cfaa05db-99dd-47a7-8e68-970e7b65d344/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Cloud Ops", image: "/badges/aws-cloudops.png", link: "https://www.credly.com/badges/01e6f32d-6892-44f8-abb5-61d2d9f40a27/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Security", image: "/badges/aws-security.png", link: "https://www.credly.com/badges/932338e5-e58e-45b9-8e47-62531a20e568/linked_in_profile" },
+    { name: "AWS Educate Getting Started with Serverless", image: "/badges/aws-serverless.png", link: "https://www.credly.com/badges/410247a9-7013-4e8c-b092-41567d66ce45/linked_in_profile" },
+    { name: "Introduction to Cloud Computing", image: "/badges/intro-cloud.png", link: "https://www.credly.com/badges/27e22ff2-79f1-4fa5-a590-6b009c7e9ee5/linked_in_profile" },
+    { name: "DevOps Essentials", image: "/badges/devops.png", link: "https://www.credly.com/badges/3fe9b45a-5293-41fb-b9aa-b72c253c5dc7/linked_in_profile" },
+    { name: "Linux Commands & Shell Scripting Essentials", image: "/badges/linux.png", link: "https://www.credly.com/badges/5d5d96aa-dd07-44a9-b195-531dad7dba78/linked_in_profile" },
+    { name: "Software Engineering Essentials", image: "/badges/software-engineering.png", link: "https://www.credly.com/badges/11c65ee6-2222-4bbb-b30c-757e19fe7598/linked_in_profile" },
+    { name: "Git and GitHub Essentials", image: "/badges/git-github.png", link: "https://www.credly.com/badges/b834a215-e1e4-45fb-ba93-f0fd2bcc0a64/linked_in_profile" },
+    { name: "ISC2 Candidate", image: "/badges/isc2.png", link: "https://www.credly.com/badges/a1bc5bd8-bb87-44d0-a1ee-0bb2e1c7b9ba/linked_in_profile" },
+    { name: "MTA: Security Fundamentals", image: "/badges/mta-security.png", link: "https://www.credly.com/badges/2f499d68-d5a2-476e-a91d-db6f7beda3f7/public_url" },
   ];
 
   return (
@@ -96,7 +96,7 @@ export default function Portfolio() {
           <motion.div whileHover={{ scale: 1.05 }} className="flex justify-center">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-cyan-500 blur-2xl opacity-30 animate-pulse" />
-              <img src={`${import.meta.env.BASE_URL}profile.png`} alt="Vishal Singh" className="relative w-64 h-64 rounded-full object-cover border-4 border-cyan-500 shadow-2xl" />
+              <img src="/profile.png" alt="Vishal Singh" className="relative w-64 h-64 rounded-full object-cover border-4 border-cyan-500 shadow-2xl" />
             </div>
           </motion.div>
         </motion.section>
