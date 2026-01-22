@@ -53,64 +53,6 @@ export default function Portfolio() {
     //{ name: "Cloud & DevOps Specialization — Coursera (2023)", image: "/certs/cloud-devops.png", link: null },
     { name: "Security Fundamentals — Microsoft (2019)", image: `${import.meta.env.BASE_URL}certs/microsoft-security.png`, link: null },
   ];
-  
-  const projects = [
-  {
-    title: "Log Drop – Log Noise Reduction & Parsing System",
-    org: "ControlCase",
-    points: [
-      "Reduced SIEM log noise and controlled ingestion costs",
-      "Configured Rsyslog to separate critical and unwanted logs",
-      "Implemented Fluent Bit filtering, routing, and buffering",
-      "Improved SIEM performance by eliminating regex-based filtering"
-    ]
-  },
-  {
-    title: "GitLab Upgrade & Active Directory Integration",
-    org: "ControlCase",
-    points: [
-      "Upgraded GitLab to latest secure version with zero downtime",
-      "Integrated Microsoft Active Directory authentication",
-      "Enabled centralized audit logging and access control"
-    ]
-  },
-  {
-    title: "Secure OpenVPN Deployment",
-    org: "ControlCase",
-    points: [
-      "Deployed licensed OpenVPN with certificate-based authentication",
-      "Configured role-based access and encrypted tunnels",
-      "Enabled secure remote connectivity over public networks"
-    ]
-  },
-  {
-    title: "Air Canvas",
-    org: "College",
-    points: [
-      "Built gesture-based drawing app using computer vision",
-      "Implemented PNG and JPEG export",
-      "Used OpenCV and Python for motion tracking"
-    ]
-  },
-  {
-    title: "Pulse Oxygen Sensor System",
-    org: "College",
-    points: [
-      "Built Arduino-based pulse oximeter",
-      "Captured pulse and SpO2 using Blynk app",
-      "Created real-time monitoring and visualization"
-    ]
-  },
-  {
-    title: "Password Manager",
-    org: "College",
-    points: [
-      "Built secure password manager using Python and SQLite",
-      "Implemented AES encryption",
-      "Designed user-friendly secure GUI"
-    ]
-  }
-];
 
   const badges = [
     { name: "AWS Knowledge: Cloud Essentials", image: `${import.meta.env.BASE_URL}badges/aws-cloud-essentials.png`, link: "https://www.credly.com/badges/bb1ea324-6840-470d-b8ae-919aa8af69f9/linked_in_profile" },
@@ -205,37 +147,6 @@ export default function Portfolio() {
             </CardContent></Card>
           </div>
         </motion.section>
-		
-		{/* Projects */}
-		<motion.section
-			variants={fadeUp}
-			initial="hidden"
-			whileInView="visible"
-			viewport={{ once: true }}
-			transition={{ duration: 0.6 }}
-		>
-			<h2 className="text-2xl font-semibold mb-6">Projects</h2>
-
-			<div className="grid md:grid-cols-2 gap-6">
-				{projects.map((project, i) => (
-					<Card key={i}>
-						<CardContent>
-							<div className="flex justify-between items-center mb-2">
-								<h3 className="text-lg font-semibold">{project.title}</h3>
-								<span className="text-cyan-400 text-sm">{project.org}</span>
-							</div>	
-
-							<ul className="list-disc ml-5 text-slate-300 text-sm space-y-1">
-								{project.points.map((point, idx) => (
-									<li key={idx}>{point}</li>
-								))}
-							</ul>
-						</CardContent>
-					</Card>
-				))}
-			</div>
-		</motion.section>
-
 
         {/* Certifications */}
         <motion.section variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>
