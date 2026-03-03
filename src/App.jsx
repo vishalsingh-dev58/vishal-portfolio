@@ -176,7 +176,7 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold mb-6">Professional Experience</h2>
           <div className="space-y-6">
             <Card><CardContent>
-              <h3 className="text-xl font-semibold">ControlCase International — Appliance Integration Engineer</h3>
+              <h3 className="text-xl font-semibold">ControlCase International — Associate Cybersecurity Consultant</h3>
               <p className="text-slate-400 mb-2">Feb 2025 – Present</p>
               <ul className="list-disc ml-5 text-slate-300 space-y-1">
                 <li>Integrated Windows, Linux, databases into Rapid7 InsightIDR SIEM.</li>
@@ -286,7 +286,7 @@ export default function Portfolio() {
 
         <footer className="text-center text-slate-500 pt-10 border-t border-slate-800">
           <div className="flex justify-center gap-6 mb-4"><span className="flex items-center gap-2"><MapPin size={16}/> Mumbai, India</span></div>
-          <p>© {new Date().getFullYear()} Vishal Singh — Cybersecurity Portfolio</p>
+          <p>© {new Date().getFullYear()} Vishal Singh — Portfolio</p>
         </footer>
       </div>
     </div>
